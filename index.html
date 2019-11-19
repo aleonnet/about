@@ -20,13 +20,12 @@
       height: 100%;
       top: 0;
       left: 0;
-      z-index: 0;
+      z-index: -1;
     }
   </style>
 </head>
 
 <body>
-  <header>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
@@ -56,6 +55,7 @@
     </div>
   </nav>
 
+  <canvas class="header__background">
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
@@ -79,8 +79,8 @@
       </div>
     </div>
   </section>
-  <canvas class="header__background"></canvas>
-</header>
+  </canvas>
+
   <section class="section">
     <div class="container">
       <h1 class="title">About Me</h1>
