@@ -75,6 +75,7 @@
         </div>
       </div>
     </div>
+    <canvas class="header__background"></canvas>
   </section>
 
   <section class="section">
@@ -489,24 +490,23 @@
       Particles.init({
         selector: '.header__background',
         color: '#75A5B7',
-        maxParticles: 130,
+        maxParticles: 100,
         connectParticles: true,
         responsive:[
          {
             breakpoint: 768,
             options: {
-            maxParticles: 80
+            maxParticles: 60
             }
           }, {
             breakpoint: 375,
             options: {
-            maxParticles: 50
+            maxParticles: 40
               }
           }]
         });
       };
   </script>
-<canvas class="header__background"></canvas>
 </body>
 
 </html>
