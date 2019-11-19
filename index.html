@@ -21,6 +21,7 @@
       z-index: 0;
     }
   </style>
+  <canvas class="header__background"></canvas>  
 </head>
 
 <body>
@@ -483,14 +484,28 @@
   </footer>
 
   <script src="js/bundle.js"></script>
-  <canvas class="background"></canvas>
   <script src="js/particles.min.js"></script>
   <script>
     window.onload = function() {
       Particles.init({
-        selector: '.background'
-      });
-    };
+        selector: '.header__background',
+        color: '#75A5B7',
+        maxParticles: 130,
+        connectParticles: true,
+        responsive:[
+         {
+            breakpoint: 768,
+            options: {
+            maxParticles: 80
+            }
+          }, {
+            breakpoint: 375,
+            options: {
+            maxParticles: 50
+              }
+          }]
+        });
+      };
   </script>
 </body>
 
