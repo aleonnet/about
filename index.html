@@ -487,28 +487,21 @@
   <script src="js/bundle.js"></script>
   <script src="js/particles.min.js"></script>
   <script>
-    window.onload = function() {
-      Particles.init({
-        selector: '.header__background',
-        color: '#75A5B7',
-        maxParticles: 100,
-        connectParticles: true,
-        responsive:[
-         {
-            breakpoint: 768,
-            options: {
-            maxParticles: 60
-            }
-          }, {
-            breakpoint: 375,
-            options: {
-            maxParticles: 40
-              }
-          }]
-        });
-      };
+    var particles = Particles.init({
+	    selector: '.background',
+      color: ['#DA0463', '#404B69'],
+      connectParticles: true,
+      responsive: [{
+  	    breakpoint: 800,
+        options: {
+    	    color: '#00C9B1',
+    	    maxParticles: 80,
+          connectParticles: false
+        }
+      }]
+    });
   </script>
-<canvas class="header__background"></canvas>
+  <canvas class="header__background"></canvas>
 </body>
 
 </html>
