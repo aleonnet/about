@@ -82,7 +82,8 @@
     <div class="container">
       <h1 class="title">Summary</h1>
       <hr />
-      <p>Alessandro Barbosa holds a degree in Electrical Engineering from Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), a Master Business Administration from IBMEC-RJ, is a specialist in Telecommunications by IEC/PUC-MG and has a broad experience in the telecommunications industry where he's been working for over 20 years, holding positions in Sales, Marketing and Customer Care. Since 2011, he's been working in TIM Brasil as the Head of Residential Product Marketing.</p>
+      <p>Alessandro Barbosa holds a degree in Electrical Engineering from Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), a Master Business Administration from IBMEC-RJ, and is a specialist in Telecommunications by IEC/PUC-MG. With over 20 years of experience in the telecommunications industry, he has held positions in Sales, Marketing and Customer Care. Since 2011, he's been working in TIM Brasil as the Head of Residential Product Marketing.</p>
+      <p>In parallel, he has developed expertise in full-stack software development, data science, and AI/ML applications. Recent projects include mobile applications (React Native/Expo), REST APIs (FastAPI/Python), web platforms (React/Redux), and data analysis solutions. He combines business acumen with technical depth, delivering end-to-end solutions from concept to production.</p>
     </div>
   </section>
   <section class="section">
@@ -161,6 +162,36 @@
     <div class="container">
       <h1 class="title">Project showcase</h1>
       <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification">
+                <p class="title">CuidaMais API</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-8-modal" src="img/project-8-cover_4by3.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">CuidaMais App</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-7-modal" src="img/project-7-cover_4by3.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">CuidaMais Frontend</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-9-modal" src="img/project-8-cover_4by3.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
@@ -489,6 +520,114 @@
           <span class="tag">Excel</span>
           <span class="tag">vbscript</span>
           <span class="tag">Simulator</span>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-7-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">CuidaMais App</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p class="image is-3by2">
+          <img src="img/project-7-cover_3by2.png" alt="">
+        </p>
+
+        <div class="content">
+		Aplicativo mobile React Native para gestão de medicamentos e adesão a tratamentos. Sistema offline-first com notificações inteligentes, controle de estoque automático, comparação de preços entre farmácias e gamificação para incentivar a adesão.
+		Arquitetura event-driven com React Native 0.81, Expo 54, TypeScript, Zustand para estado global, SQLite local e sincronização multi-dispositivo via Supabase. Notificações nativas funcionam mesmo com app em background (Android killed state).
+		Features: cadastro via receita fotográfica com IA, código de barras, busca ou entrada manual; rastreamento automático de doses consumidas; alertas de reabastecimento; sistema de níveis, streaks e recompensas; backup automático e sincronização segura.
+        </div>
+
+        <div class="tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Expo</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Offline-First</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Notificações</span>
+          <span class="tag">Gamificação</span>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-8-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">CuidaMais API</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p class="image is-3by2">
+          <img src="img/project-8-cover_3by2.png" alt="">
+        </p>
+
+        <div class="content">
+		API REST minimalista e estável em FastAPI para comparação de preços de medicamentos e processamento de receitas. Backend escalável com Elasticsearch/OpenSearch para busca instantânea em catálogo de produtos farmacêuticos.
+		Endpoints principais: discovery dinâmico de UFs/farmácias, busca instantânea em database, sugestões por nome/princípio/forma, resolução de itens para EANs com ranking/facetas, parsing de receitas via VLM (Vision Language Model) e parsing heurístico de texto.
+		Stack: FastAPI, Pydantic, OpenAI Vision para processamento de imagens de receitas, AWS OpenSearch com autenticação IAM, Pillow para processamento de imagens. Versionamento estável (/api/v1) com rate limiting recomendado e timeouts otimizados.
+        </div>
+
+        <div class="tags">
+          <span class="tag">FastAPI</span>
+          <span class="tag">Python</span>
+          <span class="tag">Elasticsearch</span>
+          <span class="tag">OpenSearch</span>
+          <span class="tag">AWS</span>
+          <span class="tag">VLM</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">REST API</span>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-9-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">CuidaMais Frontend</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p class="image is-3by2">
+          <img src="img/project-8-cover_3by2.png" alt="">
+        </p>
+
+        <div class="content">
+		Plataforma web React para busca e compra de medicamentos com assistente AI integrado. Interface responsiva e moderna com sistema de busca inteligente, carrinho público/privado e integração com APIs externas.
+		Sistema de busca com AI via DeepSeek, sugestões em tempo real ordenadas por preço, debounce otimizado e cache de resultados. Carrinho com modo público (sem login) e sincronização pós-login, cálculo correto de preços e validação de CEP.
+		Stack: React.js, Redux Toolkit, Tailwind CSS, React Hook Form, React-Toastify. Integrações com DeepSeek para AI, ViaCEP para endereços e Supabase para autenticação e dados. Design responsivo com feedback visual, animações suaves e validações em tempo real.
+        </div>
+
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Redux</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">AI</span>
+          <span class="tag">DeepSeek</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">E-commerce</span>
         </div>
 
       </section>
