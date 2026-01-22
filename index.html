@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <title>about</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -21,6 +22,11 @@
 		right: 0;
 		z-index: 0;
 	  }
+	.image img {
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
   </style>
 </head>
 
@@ -82,7 +88,7 @@
     <div class="container">
       <h1 class="title">Summary</h1>
       <hr />
-      <p>Alessandro Barbosa holds a degree in Electrical Engineering from Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), a Master Business Administration from IBMEC-RJ, and is a specialist in Telecommunications by IEC/PUC-MG. With over 20 years of experience in the telecommunications industry, he has held positions in Sales, Marketing and Customer Care. Since 2011, he's been working in TIM Brasil as the Head of Residential Product Marketing.</p>
+      <p>Alessandro Barbosa holds a degree in Electrical Engineering from Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG), a Master of Business Administration from IBMEC-RJ, and is a specialist in Telecommunications by IEC/PUC-MG. With over 20 years of experience in the telecommunications industry, he has held positions in Sales, Marketing and Customer Care. Since 2020, he's been working in Oi S/A as Senior Manager of M&A Implementation.</p>
       <p>In parallel, he has developed expertise in full-stack software development, data science, and AI/ML applications. Recent projects include mobile applications (React Native/Expo), REST APIs (FastAPI/Python), web platforms (React/Redux), and data analysis solutions. He combines business acumen with technical depth, delivering end-to-end solutions from concept to production.</p>
     </div>
   </section>
@@ -95,20 +101,41 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
+                <img src="img/rsz_oi_logo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Oi S/A</p>
+              <p class="subtitle is-6">Senior Manager - <time datetime="2020-06">June 2020</time> - <time
+                  datetime="2025-01">Current date</time></p>
+            </div>
+          </div>
+          <div class="content">
+		Senior Manager of M&A Implementation (August 2022 - Current): Responsible for structuring and implementing strategic assets of M&A operations. Planning, structuring and implementation of Oi Fibra UPI (ClientCo, now NIO) sold for R$5.7 billion. Development and delivery of the 8,000 Towers UPI/SPE sale project for R$905 million. Segregation of over 900 supplier contracts in the process of selling Oi's mobile assets.
+		Senior Manager of Technical Transformation (June 2020 - August 2022): Savings of R$160 million in 2021 with the copper products decommissioning project. Planning the segregation of network and IT assets of the new neutral company (Vtal), enabling the sale of 57% for R$12 billion.
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
                 <img src="img/rsz_tim_logo.png" alt="Placeholder image">
               </figure>
             </div>
             <div class="media-content">
               <p class="title is-4">TIM S/A</p>
               <p class="subtitle is-6">Executive Manager - <time datetime="2011-12">December 2011</time> - <time
-                  datetime="2019-11">Current date</time> </p>
+                  datetime="2020-06">June 2020</time> </p>
             </div>
           </div>
           <div class="content">
-		Products and services' capabilities and features specification and development.
-		Internet Broadband lifecycle quality and effiency management.
-		Customer Premise Equipments (CPE) guidelines definition and selection.
-		Value Added Services and Busines Models evaluation and selection for mobile and fixed services.
+		Executive positions in Products, Marketing and Innovation areas.
+		National expansion of TIM Live (fiber), with new high-speed residential offerings.
+		Development of new portfolios with GPON, VDSL and WiFi-6 technologies.
+		Launch of the first hard music bundle with prepaid in Brazil (TIM Pré 500), with over R$40 million/year in additional revenue.
+		Planning and execution of fixed and VAS offerings for residential and SMB markets.
           </div>
         </div>
       </div>
@@ -123,13 +150,13 @@
             <div class="media-content">
               <p class="title is-4">Oi S/A</p>
               <p class="subtitle is-6">Manager - <time datetime="2009-3">March 2009</time> - <time
-                  datetime="2011-11">December 2011</time></p>
+                  datetime="2011-12">December 2011</time></p>
             </div>
           </div>
           <div class="content">
-		Customer Care and Sales channels design and implementation.
-		Digital channel transformation program features specification.
-		Key process and project management.
+		Manager of Relationship Channels Development.
+		Structuring of the Relationship Master Plan, with savings exceeding R$100 million over 5 years.
+		Creation and implementation of strategic customer relationship channels.
           </div>
         </div>
       </div>
@@ -143,15 +170,16 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Brasil Telecom S/A</p>
-              <p class="subtitle is-6">Manager - <time datetime="2000-03">March 2000</time> - <time
+              <p class="subtitle is-6">Manager - <time datetime="2002-06">June 2002</time> - <time
                   datetime="2009-03">March 2009</time> </p>
             </div>
           </div>
           <div class="content">
-		Internet and voice products KPI management.
-		Corporate and Government segments offer definition and implementation.
-		Data communication specialist.
-		Regional Account Manager at MetroRED from march 2000 to June 2002, later acquired by Brasil Telecom.
+		Various management positions in channels, customer service and products areas.
+		Compliance with Decree 6.523/08 (SAC) in company channels.
+		Development of convergent products with growth of over 20% YoY.
+		Management of channels and support systems for new products and regulatory demands.
+		Regional Account Manager at MetroRED from March 2000 to June 2002, later acquired by Brasil Telecom. Responsible for MG branch startup, achieving revenue of R$24 million/year.
           </div>
         </div>
       </div>
@@ -167,17 +195,9 @@
           <div class="tile">
             <div class="tile is-parent is-vertical">
               <article class="tile is-child notification">
-                <p class="title">CuidaMais API</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-8-modal" src="img/project-8-cover_4by3.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
                 <p class="title">CuidaMais App</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-7-modal" src="img/project-7-cover_4by3.png">
+                  <img class="modal-trigger" data-target="project-7-modal" src="img/project-8-cover_4by3.png">
                 </figure>
               </article>
             </div>
@@ -185,7 +205,7 @@
               <article class="tile is-child notification">
                 <p class="title">CuidaMais Frontend</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-9-modal" src="img/project-8-cover_4by3.png">
+                  <img class="modal-trigger" data-target="project-9-modal" src="img/project-7-cover_4by3.png">
                 </figure>
               </article>
             </div>
@@ -538,13 +558,14 @@
       </header>
       <section class="modal-card-body">
         <p class="image is-3by2">
-          <img src="img/project-7-cover_3by2.png" alt="">
+          <img src="img/project-8-cover_3by2.png" alt="">
         </p>
 
         <div class="content">
-		Aplicativo mobile React Native para gestão de medicamentos e adesão a tratamentos. Sistema offline-first com notificações inteligentes, controle de estoque automático, comparação de preços entre farmácias e gamificação para incentivar a adesão.
-		Arquitetura event-driven com React Native 0.81, Expo 54, TypeScript, Zustand para estado global, SQLite local e sincronização multi-dispositivo via Supabase. Notificações nativas funcionam mesmo com app em background (Android killed state).
-		Features: cadastro via receita fotográfica com IA, código de barras, busca ou entrada manual; rastreamento automático de doses consumidas; alertas de reabastecimento; sistema de níveis, streaks e recompensas; backup automático e sincronização segura.
+		React Native mobile application for medication management and treatment adherence. Offline-first system with intelligent notifications, automatic inventory control, price comparison across pharmacies, and gamification to encourage adherence.
+		Event-driven architecture with React Native, Expo, TypeScript, Zustand for global state, local SQLite and multi-device synchronization via Supabase. Native notifications work even with app in background (Android killed state).
+		Features: registration via AI-powered prescription photos, barcode scanning, search or manual entry; automatic tracking of consumed doses; restocking alerts; level system, streaks and rewards; automatic backup and secure synchronization.
+		Backend: REST API built with FastAPI for medication price comparison and prescription processing. Scalable backend with Elasticsearch/OpenSearch for instant search in pharmaceutical product catalog. Main endpoints: dynamic discovery of states/pharmacies, instant database search, suggestions by name/principle/form, item resolution for EANs with ranking/facets, prescription parsing via VLM (Vision Language Model) and heuristic text parsing.
         </div>
 
         <div class="tags">
@@ -554,44 +575,13 @@
           <span class="tag">Offline-First</span>
           <span class="tag">Supabase</span>
           <span class="tag">SQLite</span>
-          <span class="tag">Notificações</span>
-          <span class="tag">Gamificação</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-8-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">CuidaMais API</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <p class="image is-3by2">
-          <img src="img/project-8-cover_3by2.png" alt="">
-        </p>
-
-        <div class="content">
-		API REST minimalista e estável em FastAPI para comparação de preços de medicamentos e processamento de receitas. Backend escalável com Elasticsearch/OpenSearch para busca instantânea em catálogo de produtos farmacêuticos.
-		Endpoints principais: discovery dinâmico de UFs/farmácias, busca instantânea em database, sugestões por nome/princípio/forma, resolução de itens para EANs com ranking/facetas, parsing de receitas via VLM (Vision Language Model) e parsing heurístico de texto.
-		Stack: FastAPI, Pydantic, OpenAI Vision para processamento de imagens de receitas, AWS OpenSearch com autenticação IAM, Pillow para processamento de imagens. Versionamento estável (/api/v1) com rate limiting recomendado e timeouts otimizados.
-        </div>
-
-        <div class="tags">
           <span class="tag">FastAPI</span>
-          <span class="tag">Python</span>
           <span class="tag">Elasticsearch</span>
           <span class="tag">OpenSearch</span>
           <span class="tag">AWS</span>
           <span class="tag">VLM</span>
-          <span class="tag">OpenAI</span>
-          <span class="tag">REST API</span>
+          <span class="tag">Notifications</span>
+          <span class="tag">Gamification</span>
         </div>
 
       </section>
@@ -610,13 +600,13 @@
       </header>
       <section class="modal-card-body">
         <p class="image is-3by2">
-          <img src="img/project-8-cover_3by2.png" alt="">
+          <img src="img/project-7-cover_3by2.png" alt="">
         </p>
 
         <div class="content">
-		Plataforma web React para busca e compra de medicamentos com assistente AI integrado. Interface responsiva e moderna com sistema de busca inteligente, carrinho público/privado e integração com APIs externas.
-		Sistema de busca com AI via DeepSeek, sugestões em tempo real ordenadas por preço, debounce otimizado e cache de resultados. Carrinho com modo público (sem login) e sincronização pós-login, cálculo correto de preços e validação de CEP.
-		Stack: React.js, Redux Toolkit, Tailwind CSS, React Hook Form, React-Toastify. Integrações com DeepSeek para AI, ViaCEP para endereços e Supabase para autenticação e dados. Design responsivo com feedback visual, animações suaves e validações em tempo real.
+		React web platform for medication search and purchase with integrated AI assistant. Responsive and modern interface with intelligent search system, public/private shopping cart and external API integrations.
+		AI-powered chat assistant via MCP server (Model Context Protocol) with OpenAI integration, real-time suggestions sorted by price, optimized debounce and result caching. Shopping cart with public mode (no login) and post-login synchronization, correct price calculation and ZIP code validation.
+		Stack: React.js, Redux Toolkit, Tailwind CSS, React Hook Form, React-Toastify. Integrations with MCP server (OpenAI backend) for AI chat, ViaCEP for addresses and Supabase for authentication and data. Responsive design with visual feedback, smooth animations and real-time validations.
         </div>
 
         <div class="tags">
@@ -624,7 +614,8 @@
           <span class="tag">Redux</span>
           <span class="tag">Tailwind CSS</span>
           <span class="tag">AI</span>
-          <span class="tag">DeepSeek</span>
+          <span class="tag">MCP Server</span>
+          <span class="tag">OpenAI</span>
           <span class="tag">Supabase</span>
           <span class="tag">Responsive</span>
           <span class="tag">E-commerce</span>
